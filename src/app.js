@@ -50,7 +50,7 @@ app.setHandler({
   AskCrustIntent() {
     this.ask('What type of crust do you want?');
     return this.toIntent('TellCrustIntent');
-  }
+  },
 
   TellCrustIntent() {
     this.tell('Okay, your pizza will have ' + this.$inputs.crust.value + 'crust');
